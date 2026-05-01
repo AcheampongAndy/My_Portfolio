@@ -1,271 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Meyawo landing page.">
-    <meta name="author" content="Devcrud">
-    <title>Acheampong Andy's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Academic portfolio of Andrews Acheampong, an MPhil student in Biodata Analytics and Computational Genomics interested in bioinformatics methods, Bayesian inference, and statistical genomics.">
+    <meta name="author" content="Andrews Acheampong">
+    <meta property="og:title" content="Andrews Acheampong | Bioinformatics Methods">
+    <meta property="og:description" content="Prospective PhD applicant in bioinformatics, statistical genomics, and computational method development.">
+    <meta property="og:image" content="assets/imgs/man.jpg">
+    <title>Andrews Acheampong | Bioinformatics Methods</title>
     <link rel="shortcut icon" href="assets/imgs/fav.jpg" type="image/x-icon">
-    <!-- font icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <!-- Bootstrap + Meyawo main styles -->
-	<link rel="stylesheet" href="assets/css/meyawo.css">
-    <!-- Sweet Alert -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    
+    <link rel="stylesheet" href="assets/css/academic.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Page Navbar -->
-    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
-        <div class="container">
-            <a class="logo" href="#">AcheampongAndy</a>         
-            <ul class="nav">
-                <li class="item">
-                    <a class="link" href="#home">Home</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#about">About</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#contact">Contact</a>
-                </li>
-            </ul>
-            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
-                <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
-                </div>
+    <header class="site-header" id="top">
+        <nav class="nav-shell" aria-label="Main navigation">
+            <a class="brand" href="#top" aria-label="Andrews Acheampong home">
+                <span class="brand-mark">AA</span>
+                <span>Andrews Acheampong</span>
             </a>
-        </div>          
-    </nav><!-- End of Page Navbar -->
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Menu</span>
+            </button>
+            <div class="nav-links" id="site-nav">
+                <a href="#research">Research</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#teaching">Teaching</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-    <!-- page header -->
-    <header id="home" class="header">
-        <div class="overlay"></div>
-        <div class="header-content container">
-            <h1 class="header-title">
-                <span class="up">HI!</span>
-                <span class="down">I am  Andrews Acheampong</span>
-            </h1>
-            <p class="header-subtitle">
-                Teaching & Research Assistant
-            </p>            
-
-	    <a href = "https://github.com/AcheampongAndy?tab=repositories">
-		    <button class="btn btn-primary">Visit My Works</button>
-	    </a>
-        </div>              
-    </header><!-- end of page header -->
-
-    <!-- about section -->
-    <section class="section pt-0" id="about">
-        <!-- container -->
-        <div class="container text-center">
-            <!-- about wrapper -->
-            <div class="about">
-                <div class="about-img-holder">
-                    <img src="assets/imgs/man.JPEG" class="about-img" alt="">
-                </div>
-                <div class="about-caption">
-                    <!--p class="section-subtitle">Who Am I ?</p-->
-                    <h2 class="section-title mb-3">About Me</h2>
-                    <p>
-                        <p>
-                            I’m <b>Andrews Acheampong</b>, a <b>Teaching and Research Assistant</b> at Kwame Nkrumah 
-                            University of Science and Technology, where I earned a Bachelor of Science 
-                            in Statistics. I aim to become a <b>bioinformatician</b>, <i>developing computational 
-                            pipelines to tackle biological challenges such as analyzing gene-expression 
-                            data for epidemiological research</i>.
-                        </p>
-                        <p>
-                            While I have a strong passion for statistics, bioinformatics gives me the opportunity 
-                            to apply my skills in <b>predictive modeling</b> and <b>Bayesian methods</b> to problems like 
-                            analyzing gene expression data. As a research 
-                            assistant, I’ve seen firsthand how computational tools can transform 
-                            discoveries, strengthening my commitment to bioinformatics. Outside of work, 
-                            I enjoy exploring new datasets and staying updated on advancements in 
-                            computational biology.
-                        </p>
+    <main id="main">
+        <section class="hero section-band">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Prospective PhD applicant in bioinformatics</p>
+                    <h1>Developing statistical methods for complex biological data.</h1>
+                    <p class="hero-lede">
+                        I am Andrews Acheampong, an MPhil student in Biodata Analytics and Computational Genomics at
+                        Kwame Nkrumah University of Science and Technology. My research direction is bioinformatics
+                        method development, with particular interest in scalable Bayesian inference, distributed MCMC,
+                        and statistical genomics.
                     </p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4" onclick="window.location.href='assets/CV_ACHEAMPONG_ANDREWS.pdf'">Download CV</button>
-                </div>              
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
-    </section> <!-- end of about section -->
-
-    <div id="about-me">
-
-    </div>
-
-
-    <!-- service section -->
-    <section class="section" id="service">
-        <div class="container text-center">
-            <!--p class="section-subtitle">What I Do ?</p-->
-            <h6 class="section-title mb-6">Research Interest</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/omics_modelling.jpeg" alt="" class="icon">
-                            <h6 class="title">Omics Modeling</h6>
-                            <p class="subtitle">Developing predictive models for complex 
-                                diseases using multi-omics data integration</p>
-                        </div>
+                    <div class="hero-actions" aria-label="Primary links">
+                        <a class="button button-primary" href="assets/CV_ACHEAMPONG_ANDREWS.pdf">Download CV</a>
+                        <a class="button button-secondary" href="https://github.com/AcheampongAndy" target="_blank" rel="noopener">GitHub</a>
+                        <a class="button button-ghost" href="mailto:acheampongandrews1999@gmail.com">Email</a>
                     </div>
+                    <ul class="hero-facts" aria-label="Academic summary">
+                        <li><strong>Current training</strong><span>MPhil, Biodata Analytics and Computational Genomics</span></li>
+                        <li><strong>Foundation</strong><span>BSc Statistics, top 5 percent of graduating class</span></li>
+                        <li><strong>PhD direction</strong><span>Bioinformatics, computational biology, statistical genomics</span></li>
+                    </ul>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/genomics.jpeg" alt="" class="icon">
-                            <h6 class="title">Computational Genomics</h6>
-                            <p class="subtitle">
-                                The use of computational tools and methods to analyze and interpret 
-                                genomic data. 
-			                </p>
-                        </div>
+                <aside class="profile-panel" aria-label="Profile summary">
+                    <img src="assets/imgs/man.jpg" alt="Portrait of Andrews Acheampong" class="profile-photo">
+                    <div class="profile-note">
+                        <p class="profile-title">Research Aim</p>
+                        <p>
+                            To build computational and statistical methods that make high-dimensional biological data
+                            more interpretable, reproducible, and useful for discovery.
+                        </p>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/epigenomics.jpeg" alt="" class="icon">
-			    <h6 class="title">Epigenomics</h6>
-                            <p class="subtitle">
-                                The study of all the chemical modifications and changes that 
-                                occur in the genome, without altering the DNA sequence itself.
-			                </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/ml.jpeg" alt="" class="icon">
-                            <h6 class="title">Machine Learning</h6>
-                            <p class="subtitle">
-                                Involve using algorithms and statistical models to analyze and interpret biological data.
-			                </p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end of row -->
-        </div>
-    </section><!-- end of service section -->
-
-    <!-- portfolio section -->
-    <section class="section" id="portfolio">
-        <div class="container text-center">
-            <!--p class="section-subtitle">What I Did ?</p-->
-            <h6 class="section-title mb-6">Portfolio</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="TMDb.html" class="portfolio-card">
-                        <img src="assets/imgs/folio-1.jpg" class="portfolio-card-img" alt="">    
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>TMDb-movie-Data-Analysis</h5>
-                                <p class="font-weight-normal">Category: Jupyter Notebook</p>
-                            </span>                         
-                        </span>                     
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="Part_I.html" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-2.jpg" class="img-responsive rounded" alt="">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Communicate-Data-Findings</h5>
-                                <p class="font-weight-normal">Category: Jupyter Notebook</p>
-                            </span>                         
-                        </span>                         
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="analysis.html" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/Polycystic_Kidney.png" class="img-responsive rounded" alt="">    
-			
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Kidney Disease Progression</h5>
-                                <p class="font-weight-normal">Category: R Markdown</p>
-                            </span>                         
-                        </span>                     
-                    </a>
-                </div>
-            </div><!-- end of row -->
-        </div><!-- end of container -->
-    </section> <!-- end of portfolio section -->
-
-
-
-    <!-- contact section -->
-<section class="section bg-light" id="contact">
-    <div class="container">
-        <div class="row justify-content-center text-center">
-            <div class="col-md-8">
-                <h6 class="section-title mb-3">Contact Me</h6>
-                <p class="mb-5">
-                    Feel free to reach out to me via email or phone.
-                </p>
+                </aside>
             </div>
-        </div>
-        <div class="row">
-            <!-- Contact Info -->
-            <div class="col-md-6">
-                <h5>Contact Information</h5>
-                <ul class="list-unstyled mt-4">
-                    <li><i class="fas fa-envelope mr-2"></i>acheampongandres1999@gmail.com</li>
-                    <li><i class="fas fa-phone-alt mr-2"></i>+233 543 688 747</li>
-                </ul>
+        </section>
+
+        <section class="section" id="research">
+            <div class="container two-column">
+                <div>
+                    <p class="eyebrow">Research agenda</p>
+                    <h2>Methods that connect computation, uncertainty, and genomics.</h2>
+                </div>
+                <div class="section-copy">
+                    <p>
+                        I want to continue into a PhD immediately after my MPhil and focus on developing methods for
+                        bioinformatics. I am especially interested in problems where model uncertainty, large biological
+                        datasets, and computational constraints meet.
+                    </p>
+                    <div class="research-list">
+                        <article class="research-item">
+                            <span class="item-number">01</span>
+                            <div>
+                                <h3>Scalable Bayesian inference</h3>
+                                <p>Bayesian models, distributed MCMC, and inference strategies for molecular biology and genomics.</p>
+                            </div>
+                        </article>
+                        <article class="research-item">
+                            <span class="item-number">02</span>
+                            <div>
+                                <h3>Statistical genomics</h3>
+                                <p>Computational approaches for gene-expression, omics, and high-dimensional biological data.</p>
+                            </div>
+                        </article>
+                        <article class="research-item">
+                            <span class="item-number">03</span>
+                            <div>
+                                <h3>Reproducible research software</h3>
+                                <p>Python, R, Bash, Git, Flask, and biological data workflows that make analysis easier to inspect and extend.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
-        </div>    
-    </div>
-</section>
-<!-- end of contact section -->
+        </section>
 
+        <section class="section section-muted" id="education">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Education</p>
+                    <h2>Training in statistics, computation, and genomic data analysis.</h2>
+                </div>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-date">Jan 2026 - Present</div>
+                        <div class="timeline-content">
+                            <h3>MPhil, Biodata Analytics and Computational Genomics</h3>
+                            <p>Kwame Nkrumah University of Science and Technology, Kumasi, Ghana</p>
+                            <p class="detail">
+                                Coursework includes modern statistical methods, genomes and gene expression, advanced
+                                scientific and technical computing, mathematical modeling in biology, and biological
+                                database management.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-date">Jan 2021 - Aug 2024</div>
+                        <div class="timeline-content">
+                            <h3>BSc, Statistics</h3>
+                            <p>Kwame Nkrumah University of Science and Technology, Kumasi, Ghana</p>
+                            <p class="detail">
+                                CWA: 74.49/100. GPA equivalent: 3.82/4.00. Ranked in the top 5 percent of a graduating
+                                class of 240 students.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Selected research and code</p>
+                    <h2>Projects that show the path toward bioinformatics method development.</h2>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <img src="assets/imgs/genomics.jpeg" alt="Abstract genomics visual" loading="lazy">
+                        <div class="project-body">
+                            <p class="project-type">Bioinformatics web application</p>
+                            <h3>Rhinovirus Classification Web App</h3>
+                            <p>
+                                A Flask application for FASTA sequence analysis, visualization, and rhinovirus
+                                classification, including phylogenetic analysis workflows.
+                            </p>
+                            <div class="tag-row">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>Biopython</span>
+                                <span>SQLite</span>
+                            </div>
+                            <a href="https://github.com/AcheampongAndy/Rhinovirus_Classification_Web_App" target="_blank" rel="noopener">View repository</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img src="assets/imgs/Polycystic_Kidney.png" alt="Kidney disease analysis visual" loading="lazy">
+                        <div class="project-body">
+                            <p class="project-type">Predictive modeling thesis</p>
+                            <h3>Kidney Disease Progression</h3>
+                            <p>
+                                Logistic regression model for chronic kidney disease risk using hemoglobin, serum
+                                creatinine, hypertension, and random blood glucose.
+                            </p>
+                            <div class="tag-row">
+                                <span>R</span>
+                                <span>Regression</span>
+                                <span>Cross-validation</span>
+                            </div>
+                            <a href="analysis.html">Read report</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img src="assets/imgs/omics_modelling.jpeg" alt="Omics modeling visual" loading="lazy">
+                        <div class="project-body">
+                            <p class="project-type">Genomics training repository</p>
+                            <h3>Analysing and Interpreting Genomics Datasets</h3>
+                            <p>
+                                Coursework and practical analyses around genomic datasets, strengthening the bridge
+                                between statistics, biological data, and reproducible computation.
+                            </p>
+                            <div class="tag-row">
+                                <span>HTML</span>
+                                <span>Genomics</span>
+                                <span>Reproducibility</span>
+                            </div>
+                            <a href="https://github.com/AcheampongAndy/Analysing_and_Interpreting_Genomics_Datasets" target="_blank" rel="noopener">View repository</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img src="assets/imgs/epigenomics.jpeg" alt="Computational biology visual" loading="lazy">
+                        <div class="project-body">
+                            <p class="project-type">Computational biology practice</p>
+                            <h3>Bioinformatics for Biologists</h3>
+                            <p>
+                                Shell-based bioinformatics exercises focused on command-line workflows and biological
+                                data analysis foundations.
+                            </p>
+                            <div class="tag-row">
+                                <span>Bash</span>
+                                <span>Linux</span>
+                                <span>Bioinformatics</span>
+                            </div>
+                            <a href="https://github.com/AcheampongAndy/Bioinformatics_for_Biologists" target="_blank" rel="noopener">View repository</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
+        <section class="section section-muted" id="experience">
+            <div class="container two-column">
+                <div>
+                    <p class="eyebrow">Research experience</p>
+                    <h2>Early research built on statistical modeling and health data.</h2>
+                </div>
+                <div class="stacked-list">
+                    <article class="plain-card">
+                        <h3>Predictive Analytics for Kidney Disease Progression</h3>
+                        <p>
+                            Investigated hemoglobin, serum creatinine, hypertension, and random blood glucose as
+                            predictors of chronic kidney disease risk. Built and evaluated a logistic regression model
+                            with 10-fold cross-validation, reaching 97 percent accuracy and a Kappa value of 0.94.
+                        </p>
+                    </article>
+                    <article class="plain-card">
+                        <h3>Factors Influencing Student Academic Performance in KNUST</h3>
+                        <p>
+                            Studied the relationship between study hours and Continuous Weighted Average using linear
+                            regression and correlation analysis, reporting both statistical significance and practical
+                            limits in predictive power.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-   
- <!-- footer -->
-    <div class="container">
-        <footer class="footer">
-            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; AcheampongAndy</p>
+        <section class="section" id="teaching">
+            <div class="container two-column">
+                <div>
+                    <p class="eyebrow">Teaching and academic service</p>
+                    <h2>Teaching strengthens how I communicate methods.</h2>
+                </div>
+                <div class="stacked-list">
+                    <article class="plain-card">
+                        <div class="role-line">
+                            <h3>Research and Teaching Assistant</h3>
+                            <span>Oct 2024 - Oct 2025</span>
+                        </div>
+                        <p>
+                            Department of Statistics and Actuarial Science, KNUST. Conducted tutorials in probability,
+                            prepared homework activities, and supported faculty research projects in data science and
+                            machine learning.
+                        </p>
+                    </article>
+                    <article class="plain-card">
+                        <div class="role-line">
+                            <h3>Instructor, Data Analysis with R</h3>
+                            <span>Sep 2024 - Jul 2025</span>
+                        </div>
+                        <p>
+                            Developed and delivered practical R materials covering data manipulation, visualization,
+                            statistical analysis, and medical case studies.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-	    
+        <section class="section section-muted" id="talks">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Presentations</p>
+                    <h2>Academic communication and research community building.</h2>
+                </div>
+                <div class="talk-grid">
+                    <article class="talk-card">
+                        <span>Feb 12, 2025</span>
+                        <h3>Data-Driven Decision - Building the Future We Want with Statistics</h3>
+                        <p>Keynote address for the Ghana Association of Statistics Students, KNUST.</p>
+                    </article>
+                    <article class="talk-card">
+                        <span>Jan 20, 2025</span>
+                        <h3>Effective Teaching Strategies</h3>
+                        <p>Presentation to newly admitted lecturers in the Department of Statistics and Actuarial Science.</p>
+                    </article>
+                    <article class="talk-card">
+                        <span>Nov 19-21, 2024</span>
+                        <h3>Introduction to Git and GitHub for Research Collaboration</h3>
+                        <p>Hands-on workshop for graduate and research assistants on version control workflows.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-        </footer>
-    </div> <!-- end of page footer -->
+        <section class="section" id="skills">
+            <div class="container two-column">
+                <div>
+                    <p class="eyebrow">Technical foundation</p>
+                    <h2>Tools for method development and reproducible analysis.</h2>
+                </div>
+                <div class="skills-grid">
+                    <div>
+                        <h3>Programming</h3>
+                        <p>Python, R, SQL, JavaScript, HTML, CSS</p>
+                    </div>
+                    <div>
+                        <h3>Statistical modeling</h3>
+                        <p>Regression, machine learning, Bayesian inference, MCMC, cross-validation</p>
+                    </div>
+                    <div>
+                        <h3>Bioinformatics computing</h3>
+                        <p>Biopython, FASTA workflows, phylogenetic analysis, biological databases</p>
+                    </div>
+                    <div>
+                        <h3>Research software</h3>
+                        <p>Git, GitHub, Bash scripting, Conda, Flask, SQLite, Jupyter, R Markdown</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-	
-	<!-- core  -->
-    <script src="assets/js/jquery-3.4.1.js"></script>
-    <script src="assets/js/bootstrap.bundle.js"></script>
+        <section class="contact-section" id="contact">
+            <div class="container contact-grid">
+                <div>
+                    <p class="eyebrow">Contact</p>
+                    <h2>Open to PhD conversations in bioinformatics and computational biology.</h2>
+                    <p>
+                        I am looking for PhD environments where I can develop statistical and computational methods for
+                        biological data, contribute reproducible research software, and grow through interdisciplinary
+                        collaboration.
+                    </p>
+                </div>
+                <div class="contact-card" aria-label="Contact information">
+                    <a href="mailto:acheampongandrews1999@gmail.com">acheampongandrews1999@gmail.com</a>
+                    <a href="tel:+233543688747">+233 543 688 747</a>
+                    <a href="https://github.com/AcheampongAndy" target="_blank" rel="noopener">github.com/AcheampongAndy</a>
+                    <a href="assets/CV_ACHEAMPONG_ANDREWS.pdf">Download academic CV</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <!-- bootstrap 3 affix -->
-	<script src="assets/js/bootstrap.affix.js"></script>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year"></span> Andrews Acheampong</p>
+            <a href="#top">Back to top</a>
+        </div>
+    </footer>
 
-    <!-- Meyawo js -->
-     <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-storage.js"></script>
-  
-      <script src="assets/js/readabout.js"></script>
-      <script src="assets/js/meyawo.js"></script>
-
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-
-<script src = "assets/js/index.js"></script>
+    <script src="assets/js/academic.js"></script>
 </body>
 </html>
